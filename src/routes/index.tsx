@@ -6,7 +6,7 @@ import {
   BriefcaseBusiness,
   Cloud,
   Database,
-  Github,
+  Download,
   Linkedin,
   Mail,
   MapPin,
@@ -15,7 +15,11 @@ import {
   Sparkles,
 } from "lucide-react";
 
+import profilePhoto from "@/assets/ashish-kottakota-photo.png";
 import { Button } from "@/components/ui/button";
+
+const linkedInUrl = "https://www.linkedin.com/in/kottakota-ashish";
+const resumeUrl = "/ashish-kottakota-resume.docx";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -97,7 +101,7 @@ function PortfolioPage() {
               <span className="rounded-full border border-hero-foreground/18 px-3 py-1">Portfolio</span>
               <a className="transition hover:text-hero-foreground" href="mailto:kottakotashish99@gmail.com">Email</a>
               <a className="transition hover:text-hero-foreground" href="https://github.com/kottakotaasshish" target="_blank" rel="noreferrer">GitHub</a>
-              <a className="transition hover:text-hero-foreground" href="https://www.linkedin.com/in/kottakota-ashish/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a className="transition hover:text-hero-foreground" href={linkedInUrl} target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </nav>
 
             <div className="max-w-3xl space-y-6">
@@ -113,21 +117,26 @@ function PortfolioPage() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Button variant="hero" size="lg" asChild>
-                  <a href="mailto:kottakotashish99@gmail.com">
-                    <Mail className="size-4" /> Contact me
+                  <a href={resumeUrl} download>
+                    <Download className="size-4" /> Download resume
                   </a>
                 </Button>
                 <Button variant="glass" size="lg" asChild>
-                  <a href="https://github.com/kottakotaasshish" target="_blank" rel="noreferrer">
-                    <Github className="size-4" /> View GitHub
+                  <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="size-4" /> Open LinkedIn
                   </a>
                 </Button>
               </div>
             </div>
           </div>
 
-          <div className="float-signal rounded-[2rem] border border-hero-foreground/14 bg-hero-foreground/10 p-5 shadow-lift backdrop-blur-xl">
-            <div className="rounded-[1.5rem] bg-gradient-panel p-6 text-card-foreground">
+          <div className="float-signal overflow-hidden rounded-[2rem] border border-hero-foreground/14 bg-hero-foreground/10 p-4 shadow-lift backdrop-blur-xl">
+            <img
+              src={profilePhoto}
+              alt="Ashish Kottakota professional headshot"
+              className="aspect-square w-full rounded-[1.5rem] object-cover shadow-soft"
+            />
+            <div className="mt-4 rounded-[1.5rem] bg-gradient-panel p-6 text-card-foreground">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="text-sm font-semibold text-muted-foreground">Current role</p>
@@ -238,7 +247,7 @@ function PortfolioPage() {
           <p className="mt-4 text-hero-foreground/76">Open to senior full stack, backend, and cloud-focused engineering roles.</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Button variant="hero" asChild><a href="mailto:kottakotashish99@gmail.com">Email <ArrowUpRight className="size-4" /></a></Button>
-            <Button variant="glass" asChild><a href="https://www.linkedin.com/in/kottakota-ashish/" target="_blank" rel="noreferrer"><Linkedin className="size-4" /> LinkedIn</a></Button>
+            <Button variant="glass" asChild><a href={linkedInUrl} target="_blank" rel="noopener noreferrer"><Linkedin className="size-4" /> LinkedIn</a></Button>
           </div>
         </article>
       </section>
