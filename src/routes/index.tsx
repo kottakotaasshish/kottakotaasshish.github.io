@@ -136,7 +136,7 @@ function PortfolioPage() {
               alt="Ashish Kottakota professional headshot"
               className="aspect-square w-full rounded-[1.5rem] object-cover shadow-soft"
             />
-            <div className="rounded-[1.5rem] bg-gradient-panel p-6 text-card-foreground">
+            <div className="mt-4 rounded-[1.5rem] bg-gradient-panel p-6 text-card-foreground">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="text-sm font-semibold text-muted-foreground">Current role</p>
@@ -247,7 +247,7 @@ function PortfolioPage() {
           <p className="mt-4 text-hero-foreground/76">Open to senior full stack, backend, and cloud-focused engineering roles.</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Button variant="hero" asChild><a href="mailto:kottakotashish99@gmail.com">Email <ArrowUpRight className="size-4" /></a></Button>
-            <Button variant="glass" asChild><a href="https://www.linkedin.com/in/kottakota-ashish/" target="_blank" rel="noreferrer"><Linkedin className="size-4" /> LinkedIn</a></Button>
+            <Button variant="glass" asChild><a href={linkedInUrl} target="_blank" rel="noopener noreferrer"><Linkedin className="size-4" /> LinkedIn</a></Button>
           </div>
         </article>
       </section>
