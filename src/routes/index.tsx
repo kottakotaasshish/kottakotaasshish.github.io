@@ -6,7 +6,6 @@ import {
   Cloud,
   Code2,
   Database,
-  Download,
   Github,
   Linkedin,
   Mail,
@@ -22,7 +21,6 @@ import { Button } from "@/components/ui/button";
 const email = "kottakotashish99@gmail.com";
 const linkedInUrl = "https://www.linkedin.com/in/kottakota-ashish";
 const githubUrl = "https://github.com/kottakotaasshish";
-const resumeUrl = "/ashish-kottakota-resume.docx";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -104,7 +102,6 @@ function PortfolioPage() {
               <a href={`mailto:${email}`} className="hover:text-hero-foreground">Email</a>
               <a href={githubUrl} target="_blank" rel="noreferrer" className="hover:text-hero-foreground">GitHub</a>
               <a href={linkedInUrl} target="_blank" rel="noreferrer" className="hover:text-hero-foreground">LinkedIn</a>
-              <a href={resumeUrl} download className="hover:text-hero-foreground">Resume</a>
             </nav>
 
             <div className="max-w-3xl space-y-7">
@@ -122,9 +119,6 @@ function PortfolioPage() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <Button variant="hero" size="lg" asChild>
-                  <a href={resumeUrl} download><Download className="size-4" aria-hidden="true" /> Download resume</a>
-                </Button>
-                <Button variant="glass" size="lg" asChild>
                   <a href={`mailto:${email}`}><Mail className="size-4" aria-hidden="true" /> Contact me</a>
                 </Button>
               </div>
