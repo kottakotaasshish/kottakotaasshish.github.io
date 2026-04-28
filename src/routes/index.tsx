@@ -225,7 +225,7 @@ function PortfolioPage() {
           <h2 className="text-2xl font-black">Education</h2>
           <div className="mt-5 space-y-4 text-muted-foreground">
             <p><strong className="text-foreground">M.S. Computer Science</strong><br />California State University Fullerton, California</p>
-            <p><strong className="text-foreground">B.S. Computer Science</strong><br />BML Munjal University, Gurgaon, India</p>
+            <p><strong className="text-foreground">B.Tech Computer Science</strong><br />BML Munjal University, Gurgaon, India</p>
           </div>
         </article>
         <article className="rounded-xl bg-hero p-6 text-hero-foreground shadow-lift">
