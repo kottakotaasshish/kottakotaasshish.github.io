@@ -35,18 +35,20 @@ jobs:
       - name: Create GitHub Pages entry file
         run: |
           CSS_FILE=$(find dist/client/assets -name 'styles-*.css' | head -n 1 | sed 's#dist/client##')
-          JS_FILE=$(find dist/client/assets -name 'main-*.js' | head -n 1 | sed 's#dist/client##')
+          JS_FILE=$(find dist/client/assets -name 'index-*.js' | head -n 1 | sed 's#dist/client##')
           cat > dist/client/index.html <<EOF
           <!doctype html>
           <html lang="en">
             <head>
               <meta charset="UTF-8" />
               <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              <title>Ashish Kottakota — Python Full Stack Developer</title>
-              <meta name="description" content="Portfolio of Ashish Kottakota, a Python full stack developer specializing in React, FastAPI, microservices, cloud, and distributed systems." />
+              <title>Ashish Kottakota | Python Full Stack Developer</title>
+              <meta name="description" content="Portfolio of Ashish Kottakota, Python full stack developer skilled in React, FastAPI, cloud, microservices, Kafka, and scalable systems." />
+              <link rel="canonical" href="https://kottakotaasshish.github.io/" />
               <link rel="stylesheet" href="$CSS_FILE" />
             </head>
             <body>
+              <div id="root"></div>
               <script type="module" src="$JS_FILE"></script>
             </body>
           </html>
