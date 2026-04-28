@@ -56,11 +56,11 @@ jobs:
                 <section class="hero">
                   <div class="wrap hero-grid">
                     <div>
-                      <nav class="nav" aria-label="Primary navigation"><a href="mailto:kottakotashish99@gmail.com">Email</a><a href="https://github.com/kottakotaasshish">GitHub</a><a href="https://www.linkedin.com/in/kottakota-ashish">LinkedIn</a><a href="/ashish-kottakota-resume.docx" download>Resume</a></nav>
+                      <nav class="nav" aria-label="Primary navigation"><a href="mailto:kottakotashish99@gmail.com">Email</a><a href="https://github.com/kottakotaasshish">GitHub</a><a href="https://www.linkedin.com/in/kottakota-ashish">LinkedIn</a></nav>
                       <span class="eyebrow">Senior Python Full Stack Developer</span>
                       <h1>Ashish Kottakota</h1>
                       <p class="lead">I build scalable product systems with React, TypeScript, Python, FastAPI, cloud platforms, microservices, and event-driven architecture.</p>
-                      <div class="actions"><a class="btn primary" href="/ashish-kottakota-resume.docx" download>Download resume</a><a class="btn ghost" href="mailto:kottakotashish99@gmail.com">Contact me</a></div>
+                      <div class="actions"><a class="btn primary" href="mailto:kottakotashish99@gmail.com">Contact me</a></div>
                       <div class="metrics"><div class="metric"><strong>8+</strong><span>years experience</span></div><div class="metric"><strong>35%</strong><span>faster page loads</span></div><div class="metric"><strong>40%</strong><span>throughput gain</span></div></div>
                     </div>
                     <aside class="photo-card" aria-label="Profile summary"><img src="$PHOTO_FILE" width="480" height="480" alt="Ashish Kottakota professional headshot" fetchpriority="high"><div class="summary"><h2>Reliable full stack delivery</h2><p class="muted">Production experience across retail, healthcare, cloud, and distributed platforms. Based in USA.</p></div></aside>
