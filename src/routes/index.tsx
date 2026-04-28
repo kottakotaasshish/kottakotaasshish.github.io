@@ -16,7 +16,7 @@ import {
   Zap,
 } from "lucide-react";
 
-import profilePhoto from "@/assets/ashish-kottakota-photo.png";
+import profilePhoto from "@/assets/ashish-kottakota-photo-optimized.webp";
 import { Button } from "@/components/ui/button";
 
 const email = "kottakotashish99@gmail.com";
@@ -145,8 +145,8 @@ function PortfolioPage() {
               <img
                 src={profilePhoto}
                 alt="Ashish Kottakota professional headshot"
-                width="800"
-                height="800"
+                width="480"
+                height="480"
                 fetchPriority="high"
                 className="mx-auto aspect-square w-full max-w-[260px] rounded-xl object-cover shadow-soft sm:max-w-[300px]"
               />
