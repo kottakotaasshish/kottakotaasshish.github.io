@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowUpRight,
-  Award,
   BriefcaseBusiness,
   Cloud,
   Code2,
@@ -10,6 +9,7 @@ import {
   Linkedin,
   Mail,
   MapPin,
+  Phone,
   ServerCog,
   ShieldCheck,
   Zap,
@@ -18,7 +18,8 @@ import {
 import profilePhoto from "@/assets/ashish-kottakota-photo-optimized.webp";
 import { Button } from "@/components/ui/button";
 
-const email = "kottakotashish99@gmail.com";
+const email = "kottakotaashish99@gmail.com";
+const phone = "+1 (714) 987-2512";
 const linkedInUrl = "https://www.linkedin.com/in/kottakota-ashish";
 const githubUrl = "https://github.com/kottakotaasshish";
 
@@ -145,17 +146,17 @@ function PortfolioPage() {
                 className="mx-auto aspect-square w-full max-w-[260px] rounded-xl object-cover shadow-soft sm:max-w-[300px]"
               />
               <div className="mt-5 space-y-4 rounded-xl bg-card p-5 text-card-foreground">
-                <div className="flex items-start gap-3">
-                  <Award className="mt-1 size-6 text-primary" aria-hidden="true" />
-                  <div>
-                    <h2 className="text-xl font-black">Reliable full stack delivery</h2>
-                    <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                      Production experience across retail, healthcare, cloud, and distributed platforms.
-                    </p>
+                <h2 className="text-xl font-black">Contact details</h2>
+                <div className="space-y-3 text-sm font-semibold text-muted-foreground">
+                  <a href={`tel:${phone.replace(/[^+\d]/g, "")}`} className="flex items-center gap-2 hover:text-foreground">
+                    <Phone className="size-4 text-primary" aria-hidden="true" /> {phone}
+                  </a>
+                  <a href={`mailto:${email}`} className="flex items-center gap-2 hover:text-foreground">
+                    <Mail className="size-4 text-primary" aria-hidden="true" /> {email}
+                  </a>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="size-4 text-primary" aria-hidden="true" /> USA
                   </div>
-                </div>
-                <div className="flex items-center gap-2 text-sm font-semibold text-muted-foreground">
-                  <MapPin className="size-4 text-primary" aria-hidden="true" /> USA
                 </div>
               </div>
             </div>
