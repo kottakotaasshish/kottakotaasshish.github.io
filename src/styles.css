@@ -66,6 +66,7 @@
   --color-skill: var(--skill);
   --color-success: var(--success);
   --color-code: var(--code);
+  --color-focus: var(--focus);
   --font-sans: var(--font-sans);
   --shadow-soft: var(--shadow-soft);
   --shadow-lift: var(--shadow-lift);
@@ -100,6 +101,7 @@
   --skill: oklch(0.88 0.08 178);
   --success: oklch(0.64 0.14 157);
   --code: oklch(0.32 0.09 252);
+  --focus: oklch(0.72 0.16 77);
   --chart-1: oklch(0.55 0.18 252);
   --chart-2: oklch(0.64 0.14 157);
   --chart-3: oklch(0.78 0.16 77);
@@ -113,7 +115,7 @@
   --sidebar-accent-foreground: oklch(0.22 0.052 229);
   --sidebar-border: oklch(0.86 0.024 83);
   --sidebar-ring: oklch(0.58 0.18 252);
-  --gradient-hero: radial-gradient(circle at 25% 20%, color-mix(in oklab, var(--accent) 36%, transparent), transparent 30%), linear-gradient(135deg, var(--hero), var(--code));
+  --gradient-hero: linear-gradient(135deg, var(--hero), var(--code));
   --gradient-panel: linear-gradient(145deg, color-mix(in oklab, var(--card) 92%, transparent), color-mix(in oklab, var(--secondary) 38%, var(--card)));
   --shadow-soft: 0 18px 50px -28px color-mix(in oklab, var(--primary) 48%, transparent);
   --shadow-lift: 0 26px 70px -34px color-mix(in oklab, var(--hero) 58%, transparent);
@@ -164,6 +166,7 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     letter-spacing: 0;
+    text-rendering: optimizeLegibility;
   }
 
   html {
@@ -184,11 +187,8 @@
     text-wrap: balance;
   }
 
-  .portfolio-grid {
-    background-image:
-      linear-gradient(color-mix(in oklab, var(--hero-foreground) 9%, transparent) 1px, transparent 1px),
-      linear-gradient(90deg, color-mix(in oklab, var(--hero-foreground) 9%, transparent) 1px, transparent 1px);
-    background-size: 42px 42px;
+  .text-pretty {
+    text-wrap: pretty;
   }
 
   .float-signal {
